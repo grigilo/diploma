@@ -1,7 +1,5 @@
 import os
 from pathlib import Path
-
-
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -19,7 +17,7 @@ BASE_URL = "127.0.0.1:8000"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
