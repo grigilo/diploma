@@ -28,12 +28,6 @@ class AdUpdateSerializer(serializers.ModelSerializer):
         model = Ad
         fields = ["title", "price", "description"]
 
-    # def validate(self, data):
-    #     user = self.context['request'].user
-    #     ad_id = self.instance.id if self.instance else None
-    #     if Ad.objects.filter(id=ad_id, author=user).exists():
-    #         return data
-    #     raise serializers.ValidationError("Вы не являетесь владельцем этого объявления")
 
 
 class AdSerializer(serializers.ModelSerializer):
