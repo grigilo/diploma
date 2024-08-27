@@ -76,4 +76,15 @@ _____
 _____
 
 ## Для запуска проекта в Docker необходимо воспользоваться командой:
-### - docker-compose up -d --build
+### в файле .env Прописать POSTGRES_HOST=db
+
+- docker-compose up -d --build
+
+_____
+## Для запуска тестов необходимо воспользоваться командой:
+
+- coverage run --source='.' manage.py test
+
+и вывести отчет по покрытию:
+- coverage report
+_____
